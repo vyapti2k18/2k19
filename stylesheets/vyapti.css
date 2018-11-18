@@ -1,0 +1,77 @@
+html,body { height: 100%; }
+
+#contentsec {
+	height: 100%;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+
+#canvas {
+  position:absolute;
+  left:0;
+  top:0;
+}
+
+.homesec {
+	position: absolute;
+	top: 0;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	z-index: 2;
+}
+
+.expbutton {
+	background-color: rgb(0,0,0,0.3);
+	border: 1px solid white;
+	border-radius: 50px;
+	font-size: 2ch;
+	padding: 10px;
+	color: white;
+}
+
+.expbutton:hover {
+	background-color: rgb(255,255,255,1);
+	color: black;
+	cursor: pointer;
+}
+
+.page {
+	min-height: 100%;
+	margin: 0px; 
+	padding: 0px;
+}
+
+@keyframes aninmationrotate {
+	from { 
+		transform: rotateY(0deg);
+	}
+	to {
+		transform: rotateY(359deg);
+	}
+}
+
+.loadervyapti {
+	animation: aninmationrotate 2s infinite linear;
+}
+
+.fold {
+  postion: relative;
+}
+/* folding */
+.fold::before {
+  content:"";
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  border-style: solid;
+  border-width: 25px 0px 0px 25px;
+  border-color: #32CD32 black;
+  transition: all ease 0.5s;
+}
+
+.nospace {
+	margin: 0px; 
+	padding: 0px;
+}

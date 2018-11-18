@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vyapti 2K19</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="stylesheets/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="stylesheets/vyapti.css" media="screen,projection" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <script type="text/javascript" src="javascripts/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="javascripts/materialize.min.js"></script>
+	<script type="text/javascript" src="javascripts/vyapti.js"></script>
+</head>
+<body>
+	<div id="contentsec">
+		&nbsp;
+	</div>
+	<script>
+		function loadcontenthome()
+		{
+			$.ajax({url: "public/home.html", success: function(result){
+			$("#contentsec").html(result);
+			}});
+		}
+		$.ajax({url: "public/loader.html", success: function(result){
+			$("#contentsec").html(result);
+			setTimeout(loadcontenthome,2000);
+		}});
+	</script>
+</body>
+</html>
