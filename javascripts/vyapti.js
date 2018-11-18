@@ -41,7 +41,7 @@ function backgroundanimation() {
     
     this.draw = function () {
       ctx.fillRect(this.x, this.y, this.s, this.s);
-      ctx.fillStyle = "#0f0";
+      ctx.fillStyle = "#2196F3";
       ctx.fill();
     }
     
@@ -73,3 +73,7 @@ function backgroundanimation() {
 $('.fixed-action-btn').floatingActionButton({
   direction:"top"
 });
+
+
+
+
