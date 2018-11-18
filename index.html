@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html style="overflow-y: hidden;">
 <head>
     <title>Vyapti 2K19</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -15,96 +15,53 @@
 </head>
 <body>
 
-<!-- 
-		<div class="loading">
-				<div class="row">
-					<div class="col s12">
-						<br><br><br><br>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col s12 center-align">
-						<img src="images/vyapti.png" class="z-depth-1 loadervyapti" style="height: 100px; width: 100px; border-radius: 150px;">
-					</div>
-					<div class="col s12 center-align">
-						<h5>LOADING...</h5>
-					</div>
-				</div>
-				</div> -->
 				
 	<div id="contentsec" >
 		<div id="landingpage" class="row page black" style="padding: 0px; margin: 0px; position:relative;">
-	<div id="sec">
-		<canvas id="canvas"></canvas>
-	</div>
-	<div>
-		<div class="row">
-			<div class="col s6 m4 l2 offset-s6 offset-m8 offset-l10">
-				<img src="images/mits.png" height="50px" width="100%">
+			<div id="sec">
+				<canvas id="canvas"></canvas>
+			</div>
+			<div>
+				<div class="row">
+					<div class="col s6 m4 l2" style="padding: 12px;"><!-- offset-s6 offset-m8 offset-l10">-->
+						<img src="images/mits.png" height="50px" width="100%">
+						</div>
 				</div>
-		</div>
-		<div class="row">
-			<div class="col s12 m12 l4 offset-l4">
-				<img src="images/vyapti.png" height="30%" width="100%" style="object-fit: scale-down; align: center;">
+				<div class="row">
+					<div class="col s12 m12 l4 offset-l4">
+						<img src="images/vyapti.png" height="25%" width="100%" style="object-fit: scale-down; align: center;">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col s12 m12 l12" style="color: white; word-wrap: break-word;">
+						<h1 class="blue-text" style="text-align: center; font-size: 8ch;">VYAPTI 2k19</h1>
+						<h5 style="color: white; text-align: center;">Join Us on February <b>14<sup>th</sup> & 15<sup>th</sup><b></h5>
+						<!-- <h6 style="color: white; text-align: center;">February, 2019</h6> -->
+					</div>
+				</div>
+			</div>
+			<div>
+				<div id="mainmenubtn" class="fixed-action-btn">
+					<a id="menuid01" class="btn-floating btn-large red">
+						<i class="large material-icons">menu</i>
+					</a>
+					<ul>
+						<li><a class="btn-floating btn-large red tooltipped" data-position="left" data-tooltip="Home"><span style="font-size:1ch;"><i class="material-icons">home</i></span></a></li>
+						<li><a class="btn-floating btn-large yellow darken-1 expbutton tooltipped" data-position="left" data-tooltip="Events" href="events.html"><span style="font-size: 1ch;"><i class="material-icons">event</i></span></a></li>
+						<li><a class="btn-floating btn-large green tooltipped" data-position="left" data-tooltip="About Us"><span style="font-size: 1ch;"><i class="material-icons">description</i></span></a></a></li>
+						<li><a class="btn-floating btn-large blue tooltipped" data-position="left" data-tooltip="Contact Us"><span style="font-size: 0.8ch;"><i class="material-icons">contacts</i></span></a></a></li>
+					</ul>
+				</div>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col s12 m12 l12" style="color: white; word-wrap: break-word;">
-				<h1 class="blue-text" style="text-align: center; font-size: 8ch;">VYAPTI 2k19</h1>
-				<h5 style="color: white; text-align: center;">MITS Techfest Coming Soon</h5>
+		<div class="tap-target blue lighten-4" data-target="mainmenubtn">
+			<div class="tap-target-content">
+			  <h5>Explore More</h5>
 			</div>
-		</div>
-	</div>
-	<div>
-		<div class="fixed-action-btn">
-			<a id="menuid01" class="btn-floating btn-large red">
-				<i class="large material-icons">menu</i>
-			</a>
-			<ul>
-				<li><a class="btn-floating btn-large red"><span style="font-size:1ch;">Home</span></a></li>
-				<li><a class="btn-floating btn-large yellow darken-1 expbutton"><span style="font-size: 1ch;">Events</span></a></li>
-				<li><a class="btn-floating btn-large green"><span style="font-size: 1ch;">About Us</span></a></a></li>
-				<li><a class="btn-floating btn-large blue"><span style="font-size: 0.8ch;">Contact Us</span></a></a></li>
-			</ul>
-		</div>
-	</div>
-</div>	
-<!-- <script>
-	backgroundanimation();
-</script> -->
+		 </div>	
 
 	</div>
-	<!-- <script>
-		// function loadcontenthome()
-		// {
-		// 	$.ajax({url: "public/home.html", success: function(result){
-		// 	$("#contentsec").html(result);
-		// 	}});
-		// }
-		// $.ajax({url: "public/loader.html", success: function(result){
-		// 	$("#contentsec").html(result);
-		// 	setTimeout(loadcontenthome,2000);
-		// }});
-        $('.fixed-action-btn').floatingActionButton({
-		direction:"top"
-	});
 
-
-
-
-	</script> -->
-
-
-	
-	<!-- <script language="javascript" type="text/javascript">
-		$(window).load(function() {
-		$('#loading').hide();
-		$('#contentsec').show();
-		alert("Loaded");
-	 });
-
-
-	</script> -->
     <script>
 		function hidePreloader() {
 			var preloader = $('.spinner-wrapper');
@@ -117,29 +74,25 @@
 			backgroundanimation();
 			$('#contentsec').show();
 			});
-	
-			// $(document).ready(function() {
-			
-			// $(window).on("load", function() {
-			// preloaderFadeOutTime = 2000;
-			// alert("yt");
-			// hidePreloader();
-			// backgroundanimation();
-			// $('#contentsec').show();
-			// });
 
-			// });
+            $('.fixed-action-btn').floatingActionButton({
+		direction:"top"
+	});
+			$('.tooltipped').tooltip();
+	$('#canvas').click(function(){
+		$('.tap-target').tapTarget('open');
+	});
+	
    </script>
 
 </body>
 
-<!--CSS Spinner-->
+
 <div class="spinner-wrapper">
 		<div class="spinner">
-				<!-- <div class="cube1"></div>
-				<div class="cube2"></div> -->
+				
 				<img src="images/vyapti.png" class="z-depth-1 loadervyapti" style="height: 100px; width: 100px; border-radius: 150px;">
-				 <!-- <h5 STYLE="color:#2196F3">Vyapti 2k19</h5>  -->
+				 
 				 <h5 data-text="Loading...">Loading...</h5> 
 				
 		</div>
